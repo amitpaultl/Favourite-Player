@@ -5,15 +5,78 @@ body{
     background: #171D32
     
 }
-h1{
-    font-family: 'Berkshire Swash', cursive;
-}
 
 
-
+/* hrader area start  */
 
 
 .header-bg{
     background: #000;
     padding: 138px 0;
+}
+
+h1{
+    font-family: 'Berkshire Swash', cursive;
+    font-weight: 400;
+    font-size: 76px;
+    line-height: 94px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #FF5E19;
+    margin-bottom: 28px;
+}
+
+.header-bg p{
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 30px;
+text-align: center;
+letter-spacing: -0.02em;
+color: #FFFFFF;
+}
+
+/* player list */
+
+.section-pading{
+    padding-top: 75px;
+    padding-bottom:145px ;
+}
+
+.card-bg{
+    background: #0D0D0D;
+    border: 1px solid #434343;
+}
+
+h5.card-title {
+    font-weight: 800;
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+p.card-text {
+    color: #B3B3B3;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+small.text-first {
+    margin-right: 10px;
+}
+
+small.text-lest {
+    margin-left: 10px;
+}
+
+button.btn {
+    font-family: 'Manrope';
+    font-weight: 700;
+    font-size: 16px;
+    color: #FFFFFF;
+    background: #015196;
+    padding: 10px 80px;
+}
+button.btn:hover{
+    color: #ffffff;
 }
