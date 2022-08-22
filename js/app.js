@@ -15,15 +15,13 @@ const totalSelectPlayer = []
 function dispaly(PlayerAllNmae){
     const getEnlment =  document.getElementById('cerat-tag');
     const getEnlmentTag = document.createElement('li');
-    if(PlayerAllNmae.length <= 5){
+    if(PlayerAllNmae.length < 6){
         for (let i = 0; i < PlayerAllNmae.length; i++) {
             const element = PlayerAllNmae[i];
-            
             getEnlmentTag.innerText = element
-            getEnlment.appendChild(getEnlmentTag)
+            getEnlment.appendChild(getEnlmentTag);
         }
-    }else{
-        alert('You do not add player')
+        
     }
 
     document.getElementById('Calculate').addEventListener('click', function(){
@@ -49,12 +47,16 @@ function dispaly(PlayerAllNmae){
 }
 
 function seceltName(element){
-    element.setAttribute('disabled', '');
-    const secletPlayer = element.parentNode.children[0].innerText
+    if(totalSelectPlayer.length <= 4){
+        element.setAttribute('disabled', '');
+        const secletPlayer = element.parentNode.children[0].innerText
+        totalSelectPlayer.push(secletPlayer)
+        console.log(totalSelectPlayer);
+        dispaly(totalSelectPlayer)
+    }else{
+        alert('You do not add player');
+    }
     
-     totalSelectPlayer.push(secletPlayer)
-
-     dispaly(totalSelectPlayer)
 }
 
 
