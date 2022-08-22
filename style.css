@@ -72,11 +72,58 @@ small.text-lest {
 button.btn {
     font-family: 'Manrope';
     font-weight: 700;
-    font-size: 16px;
+    font-size: 15px;
     color: #FFFFFF;
     background: #015196;
     padding: 10px 80px;
 }
 button.btn:hover{
     color: #ffffff;
+}
+
+/* right side */
+
+.select-area {
+    height: 386px;
+}
+
+.text-sesect{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 33px;
+    text-align: center;
+    letter-spacing: -0.03em;
+    color: #FFFFFF;
+    
+}
+
+.order-list{
+    margin-top: 55px;
+}
+
+.order-list li{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 35px;
+    color: #FFFFFF;
+    padding-left: 11px;
+}
+
+.single-box {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 18px;
+}
+
+input.rightsite{
+    text-align: left;
+}
+
+.rightsite {
+    width: 101px;
+    text-align: right;
+}
+
+.select-budget button{
+    margin-bottom: 18px;
 }
