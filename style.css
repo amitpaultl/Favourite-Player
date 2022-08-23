@@ -1,3 +1,4 @@
+/* common css */
 body{
     
     font-family: 'Manrope', sans-serif;
@@ -36,6 +37,10 @@ text-align: center;
 letter-spacing: -0.02em;
 color: #FFFFFF;
 }
+
+/*-------
+ hrader area start 
+ ---------- */
 
 /* player list */
 
@@ -81,7 +86,12 @@ button.btn:hover{
     color: #ffffff;
 }
 
-/* right side */
+/*-----
+ player list 
+ ----------*/
+
+
+/* right side amount */
 
 .select-area {
     height: 386px;
@@ -131,6 +141,52 @@ input.rightsite{
     color: #FF5E19;
 }
 
+/* ----------
+right side amount 
+------------*/
+
 .footer-text{
     padding: 45px 0;
+}
+
+
+/* ---------------
+responsive css 
+----------------*/
+
+/*  Large devices (desktops, less than 1200px) */
+
+
+@media (max-width: 1199.98px) and (min-width: 991.98px) { 
+    /* player list  */
+
+    h5.card-title {
+        font-size: 22px;
+    }
+ 
+    button.btn {
+        padding: 10px 53px;
+    }
+
+
+}
+
+/*  Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+    
+    h1 {
+        font-size: 50px;
+        line-height: 68px;
+        margin-bottom: 24px;
+    }
+
+    .header-bg {
+        padding: 50px 0;
+    }
+
+    .header-bg p {
+        font-size: 15px;
+        line-height: 23px;
+    }
+
 }
